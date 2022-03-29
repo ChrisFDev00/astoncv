@@ -1,8 +1,7 @@
 <?php
 $user = 'root';
 $pass = '';
-$db = 'astoncv';
 
-$db = new PDO("mysql:dbname=$db; host=localhost", $user, $pass);
+$dbcon = new PDO('mysql:host=localhost;dbname=astoncv', $user, $pass);
 
 ?>
