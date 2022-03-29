@@ -14,11 +14,18 @@ include_once 'connectdb.php'
 <body>
 
     <?php
-    $rows = $dbcon->query("SELECT * FROM cvs");
+    $rows = $conn->query("SELECT * FROM cvs");
     foreach ($rows as $row) {
     ?>
-    <li> Name: <?= $row['name'] ?>,
-    Programme: <?= $row['keyprogramming'] ?> </li>
+    <li> ID: <?= $row['id']  ?>,
+        Name: <?= $row['name'] ?>,
+        Email: <?= $row['email'] ?>,
+        Password: <?= $row['password'] ?>,
+        Programme: <?= $row['keyprogramming'] ?>,
+        Profile: <?= $row['profile'] ?>,
+        Education: <?= $row['education'] ?>,
+        URL Links: <?= $row['URLlinks'] ?>,
+     </li>
     <?php } ?>
 
 </body>

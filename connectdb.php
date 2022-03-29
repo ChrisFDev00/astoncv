@@ -2,6 +2,6 @@
 $user = 'root';
 $pass = '';
 
-$dbcon = new PDO('mysql:host=localhost;dbname=astoncv', $user, $pass);
+$conn = mysqli_connect("localhost", "$user", "$pass", "astoncv");;
 
 ?>
